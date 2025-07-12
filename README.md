@@ -16,18 +16,41 @@ Um app interativo em **Streamlit** para segmentação de usuários em grupos de 
 - **Visualização**: exibição dos 10 primeiros registros com o rótulo de grupo.
 - **Download**: exporte um CSV completo com os resultados.
 
-🎯 Descrição dos Grupos
+#📂 Estrutura do projeto
+.
+├── app.py              # Código principal do Streamlit
+├── data/               # Exemplo de dados de entrada
+│   └── dados.csv
+├── encoder.pkl         # Encoder de variáveis categóricas
+├── scaler.pkl          # Pipeline de padronização
+├── kmeans.pkl          # Modelo K-Means treinado
+├── requirements.txt    # Dependências do projeto
+└── README.md           # Documentação deste projeto
 
-Grupo 0
+
+#▶️ Como usar
+
+Execute:
+streamlit run app.py
+Navegue até http://localhost:8501 no navegador.
+
+Faça upload do CSV e aguarde o processamento.
+
+Baixe o arquivo Grupos_interesse.csv com as predições.
+
+
+#🎯 Descrição dos Grupos
+
+**Grupo 0**
 Público jovem, com forte interesse em moda, música e estética.
 
-Grupo 1
+**Grupo 1**
 Perfil esportivo e cultural: futebol americano, basquete, bandas e rock.
 
-Grupo 2
+**Grupo 2**
 Mix equilibrado de interesses em música, dança e moda.
 
-✉️ Contato
+#✉️ Contato
 Desenvolvido por William Machado de Oliveira
 
 E-mail: will.m.oliveira@gmail.com
